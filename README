@@ -1,0 +1,54 @@
+## Fgamelaunch README ##
+
+## Copyright
+This program is free software; you can redistribute it and/or modify 
+it under the terms of the GNU General Public License as published by 
+the Free Software Foundation; either version 2 of the License, or 
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+GNU General Public License for more details. 
+
+You should have received a copy of the GNU General Public License 
+along with this program; if not, write to the Free Software 
+Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+### About.
+Fgamelaunch is an enhancement of Egamelaunch, by dracflamloc of 
+DracSoft.com, including replays, watching, and more. My goal in
+enhancing this is to provide a much easier-to-setup server than
+dgamelaunch.
+
+Egamelaunch started as a project by Emmanuel Jacyna, to get to know
+the ncurses python library.
+It is based heavily upon dgamelaunch, but is written in Python.
+
+## Warning!! ##
+This software is most likely filled with security holes!!
+It is not to be used in production situations.
+
+
+### Installation.
+These instructions are for an SSH style connection only.
+Basic familiarity with the administration of your system is assumed
+
+
+1.Add a user (let's call it "egl") with no priveleges
+2.Create a new directory "/var/games/egamelaunch"
+3.Stick egamelaunch.py, egamelaunch.cfg and egl-banner in this directory.
+4.Change the ownership of the directory (recursively) to egl 
+5.Edit the egamelaunch.cfg file that should have come with this distribution
+it is (I feel) fairly self explanatory. Also, you might want to change the 
+egl-banner file to reflect your server.
+6.Change egl's login shell to the path of egamelaunch.py 
+(chsh -s /var/games/egamelaunch/egamelaunch.py egl)
+7.Ensure you have ttyrec installed on the server. 
+8.Test it by ssh'ing as egl
+
+## Bugs ##
+Quite a few... I would imagine
+
+## Improvements ##
+Many to be had, feel free to submit some.
